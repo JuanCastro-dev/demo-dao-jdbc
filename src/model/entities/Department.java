@@ -5,30 +5,30 @@ import java.util.Objects;
 
 public class Department implements Serializable {
 
-    private Integer Id;
-    private String Name;
+    private Integer id;
+    private String name;
 
     public Department() {}
 
     public Department(Integer id, String name) {
-        this.Id = id;
-        this.Name = name;
+        this.id = id;
+        this.name = name;
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        name = name;
     }
 
     @Override
@@ -36,19 +36,19 @@ public class Department implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
-        return Objects.equals(Id, that.Id);
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(Id);
+        return Objects.hashCode(id);
     }
 
     @Override
     public String toString() {
         return "Department{" +
-                "Id=" + Id +
-                ", Name='" + Name + '\'' +
+                "Id=" + id +
+                ", Name='" + name + '\'' +
                 '}';
     }
 }
