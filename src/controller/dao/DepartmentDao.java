@@ -1,4 +1,4 @@
-package model.dao;
+package controller.dao;
 
 import model.entities.Department;
 
